@@ -1,4 +1,7 @@
-describe 'Checklist', ->
+describe 'Checklists', ->
   beforeEach ->
-    @sut = new Checklist
+    @sut = new Checklists
+
+  it 'should generate a url', ->
+    expect(_.result @sut, 'url').toEqual '/api/v1/checklists'
 

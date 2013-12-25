@@ -4,7 +4,7 @@ class ChecklistsRouter extends Backbone.Router
 
   checklists: =>
     collection = new Checklists
-    # collection.fetch()
+    collection.fetch()
     view = new ChecklistsListView collection: collection
     $('#main-content').html view.render().$el
 
