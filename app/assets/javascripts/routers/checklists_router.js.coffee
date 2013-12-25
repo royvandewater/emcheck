@@ -14,6 +14,5 @@ class ChecklistsRouter extends Backbone.Router
     model = new Checklist
     view = new ChecklistFormView model: model
     $('#main-content').html view.render().$el
-    console.log view.$el.html()
 
 new ChecklistsRouter

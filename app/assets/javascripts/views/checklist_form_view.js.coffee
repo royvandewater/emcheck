@@ -2,6 +2,7 @@ class window.ChecklistFormView extends Backbone.View
   template: JST['templates/checklist_form']
 
   initialize: =>
+    @listenTo @model, 'change:errors', @render
     @listenTo @model, 'sync', =>
       Backbone.history.navigate Path.checklists(), trigger: true
 
