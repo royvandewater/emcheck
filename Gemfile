@@ -8,6 +8,11 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'therubyracer', platforms: :ruby
 gem 'jquery-rails'
 
+group :development do
+  gem 'rails_backbone_generators'
+end
+
+# Guard
 group :development, :test, :guard do
   gem 'guard', :require => false
   gem 'guard-bundler', :require => false
