@@ -8,6 +8,7 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'therubyracer', platforms: :ruby
 gem 'jquery-rails'
 gem 'eco'
+gem 'bootstrap-sass', '~> 3.0.3.0'
 
 group :development do
   gem 'rails_backbone_generators'
