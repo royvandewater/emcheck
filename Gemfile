@@ -22,6 +22,7 @@ group :development, :test, :guard do
   gem 'guard-jasmine', :require => false
   gem 'guard-passenger', :require => false
   gem 'guard-shell', :require => false
+  gem 'growl'
   gem 'jasminerice', :git => 'https://github.com/bradphelan/jasminerice.git'
   gem 'jasminerice-runner'
   gem 'listen', :require => false

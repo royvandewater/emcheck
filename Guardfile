@@ -2,7 +2,8 @@
 # More info at https://github.com/guard/guard#readme
 
 # notification :file, :path => '.guard_result'
-# notification :growl
+notification :growl
+notification :tmux
 
 ignore! /tmp/, /public/
 
