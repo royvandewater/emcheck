@@ -12,6 +12,7 @@ gem 'bootstrap-sass', '~> 3.0.3.0'
 
 group :development do
   gem 'rails_backbone_generators'
+  gem 'rest_controller_generators'
 end
 
 # Guard
