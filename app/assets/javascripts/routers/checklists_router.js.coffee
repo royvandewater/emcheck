@@ -3,6 +3,13 @@ class ChecklistsRouter extends Backbone.Router
     ''               : 'checklists'
     'checklists'     : 'checklists'
     'checklists/new' : 'new_checklist'
+    'checklists/:id' : 'checklist'
+
+  checklist: (id) =>
+    model = new Checklist id: id
+    model.fetch()
+    view = new ChecklistView model: model
+    $('#main-content').html view.render().$el
 
   checklists: =>
     collection = new Checklists

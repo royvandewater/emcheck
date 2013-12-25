@@ -4,7 +4,7 @@ class window.ChecklistRowView extends Backbone.View
   className: 'list-group-item'
 
   initialize: =>
-    @$el.attr 'href', '#'
+    @$el.attr 'href', Path.checklist @model
     @listenTo @model, 'remove', @remove
     @listenTo @model, 'change', @render
 
