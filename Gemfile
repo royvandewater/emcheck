@@ -7,6 +7,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'therubyracer', platforms: :ruby
 gem 'jquery-rails'
+gem 'eco'
 
 group :development do
   gem 'rails_backbone_generators'
@@ -18,6 +19,10 @@ group :development, :test, :guard do
   gem 'guard-bundler', :require => false
   gem 'guard-shell', :require => false
   gem 'guard-passenger', :require => false
+  gem 'guard-jasmine', :require => false
+  gem 'poltergeist'
+  gem 'jasminerice', :git => 'https://github.com/bradphelan/jasminerice.git'
+  gem 'jasminerice-runner'
   gem 'listen', :require => false
 end
 

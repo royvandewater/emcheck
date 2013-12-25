@@ -59,10 +59,10 @@ end
 
 # end
 
-# guard :jasmine, :all_on_start => false do
-#   watch(%r{spec/javascripts/spec\.(js\.coffee|js|coffee)$}) { 'spec/javascripts' }
-#   watch(%r{spec/javascripts/.+_spec\.(js\.coffee|js|coffee)$})
-#   watch(%r{spec/javascripts/fixtures/.+$})
-#   watch(%r{app/assets/javascripts/(.+?)\.(js\.coffee|js|coffee)(?:\.\w+)*$}) { |m| "spec/javascripts/#{ m[1] }_spec.#{ m[2] }" }
-#   watch(%r{app/assets/javascripts/templates/(.+?)\.(jst\.eco)(?:\.\w+)*$}) { |m| "spec/javascripts/views/#{ m[1] }_view_spec.js.coffee" }
-# end
+guard :jasmine, :all_on_start => false do
+  watch(%r{spec/javascripts/spec\.(js\.coffee|js|coffee)$}) { 'spec/javascripts' }
+  watch(%r{spec/javascripts/.+_spec\.(js\.coffee|js|coffee)$})
+  watch(%r{spec/javascripts/fixtures/.+$})
+  watch(%r{app/assets/javascripts/(.+?)\.(js\.coffee|js|coffee)(?:\.\w+)*$}) { |m| "spec/javascripts/#{ m[1] }_spec.#{ m[2] }" }
+  watch(%r{app/assets/javascripts/templates/(.+?)\.(jst\.eco)(?:\.\w+)*$}) { |m| "spec/javascripts/views/#{ m[1] }_view_spec.js.coffee" }
+end
