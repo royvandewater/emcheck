@@ -19,12 +19,13 @@ end
 group :development, :test, :guard do
   gem 'guard', :require => false
   gem 'guard-bundler', :require => false
-  gem 'guard-shell', :require => false
-  gem 'guard-passenger', :require => false
   gem 'guard-jasmine', :require => false
-  gem 'poltergeist'
+  gem 'guard-passenger', :require => false
+  gem 'guard-shell', :require => false
   gem 'jasminerice', :git => 'https://github.com/bradphelan/jasminerice.git'
   gem 'jasminerice-runner'
   gem 'listen', :require => false
+  gem 'passenger', :require => false
+  gem 'poltergeist'
 end
 
