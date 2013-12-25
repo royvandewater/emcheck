@@ -1,4 +1,12 @@
 <h1>Checklists</h1>
 
-<ul>
-</ul>
+
+<div class="list-group">
+
+  <div class="new-item">
+    <a href="<%= Path.new_checklist() %>" class="list-group-item">
+      <i class="glyphicon glyphicon-plus"></i>
+      New Checklist
+    </a>
+  </div>
+</div>

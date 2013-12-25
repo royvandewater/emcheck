@@ -22,7 +22,7 @@ class window.ChecklistsListView extends Backbone.View
   # Instance Methods
   add_one: (model) =>
     view = new ChecklistRowView model: model
-    @$('ul').append view.render().$el
+    @$('div.list-group .new-item').before view.render().$el
     @views.push view
 
   remove_views: =>
