@@ -20,5 +20,9 @@
 #= require_tree ./collections
 #= require_tree ./templates
 #= require_tree ./views
+#= require_tree ./routers
 #= require_tree .
 #= require_self
+
+$ ->
+  Backbone.history.start()
