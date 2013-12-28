@@ -14,7 +14,7 @@
 #= require jquery_ujs
 #= require bootstrap
 #= require underscore
-#= require underscore
+#= require underscore.string
 #= require backbone
 #= require_tree ./models
 #= require_tree ./collections
@@ -25,4 +25,5 @@
 #= require_self
 
 $ ->
+  _.mixin _.str.exports()
   Backbone.history.start()
