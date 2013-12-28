@@ -9,6 +9,6 @@ class window.ChecklistView extends Backbone.View
 
   render: =>
     @$el.html @template @context()
-    view = new ChecklistItemsListView model: @model.checklist_items
+    view = new ChecklistItemsListView collection: @model.checklist_items
     @$el.append view.render().$el
     this
