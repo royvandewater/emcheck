@@ -1,2 +1,9 @@
-<ul>
-</ul>
+<div class="list-group">
+
+  <div class="new-item">
+    <a href="<%= Path.new_checklist_item @model %>" class="list-group-item">
+      <i class="glyphicon glyphicon-plus"></i>
+      New Item
+    </a>
+  </div>
+</div>

@@ -8,8 +8,10 @@ class window.ChecklistItemsListView extends Backbone.View
 
   context: =>
     loading: @collection.loading
+    model: @model.toJSON()
 
   render: =>
+    console.log @context()
     @$el.html @template @context()
     @remove_views()
     @collection.each @add_one
