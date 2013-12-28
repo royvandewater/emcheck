@@ -9,6 +9,7 @@ gem 'therubyracer', platforms: :ruby
 gem 'jquery-rails'
 gem 'eco'
 gem 'bootstrap-sass', '~> 3.0.3.0'
+gem 'active_model_serializers'
 
 group :development do
   gem 'rails_backbone_generators'

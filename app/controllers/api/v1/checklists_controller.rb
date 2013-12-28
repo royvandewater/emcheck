@@ -10,7 +10,7 @@ class Api::V1::ChecklistsController < Api::V1::ApiController
   end
 
   def show
-    respond_with @checklist
+    respond_with @checklist, :serializer => ChecklistWithItemsSerializer
   end
 
   def update

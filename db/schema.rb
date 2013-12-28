@@ -11,7 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131225173526) do
+ActiveRecord::Schema.define(version: 20131228202507) do
+
+  create_table "checklist_items", force: true do |t|
+    t.integer  "checklist_id"
+    t.string   "name"
+    t.integer  "price"
+    t.boolean  "checked"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "checklist_items", ["checklist_id"], name: "index_checklist_items_on_checklist_id", using: :btree
 
   create_table "checklists", force: true do |t|
     t.string   "name"
