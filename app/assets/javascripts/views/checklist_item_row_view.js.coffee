@@ -1,8 +1,10 @@
 class window.ChecklistItemRowView extends Backbone.View
   template: JST['templates/checklist_item_row']
-  tagName: 'li'
+  tagName: 'a'
+  className: 'list-group-item'
 
   initialize: =>
+    @$el.attr 'href', '#'
     @listenTo @model, 'remove', @remove
     @listenTo @model, 'change', @render
 

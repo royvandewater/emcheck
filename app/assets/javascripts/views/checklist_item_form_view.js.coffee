@@ -4,7 +4,7 @@ class window.ChecklistItemFormView extends Backbone.View
   initialize: =>
     @listenTo @model, 'change:errors', @render
     @listenTo @model, 'sync', =>
-      Backbone.history.navigate Path.checklists(), trigger: true
+      Backbone.history.navigate Path.checklist(id: @model.get('checklist_id')), trigger: true
 
   context: =>
     model: @model.toJSON()
@@ -21,6 +21,7 @@ class window.ChecklistItemFormView extends Backbone.View
 
   submit: ($event) =>
     $event.preventDefault()
+    $event.stopPropagation()
     @model.save()
 
   update_model: =>

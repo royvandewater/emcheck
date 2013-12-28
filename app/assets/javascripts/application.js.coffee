@@ -27,3 +27,4 @@
 $ ->
   _.mixin _.str.exports()
   Backbone.history.start()
+  Backbone.history.on 'all', => console.log arguments...

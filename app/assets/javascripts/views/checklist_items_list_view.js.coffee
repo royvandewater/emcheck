@@ -11,7 +11,6 @@ class window.ChecklistItemsListView extends Backbone.View
     model: @model.toJSON()
 
   render: =>
-    console.log @context()
     @$el.html @template @context()
     @remove_views()
     @collection.each @add_one
@@ -24,7 +23,7 @@ class window.ChecklistItemsListView extends Backbone.View
   # Instance Methods
   add_one: (model) =>
     view = new ChecklistItemRowView model: model
-    @$('ul').append view.render().$el
+    @$('div.list-group .new-item').before view.render().$el
     @views.push view
 
   remove_views: =>
